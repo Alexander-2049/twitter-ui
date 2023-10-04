@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Button from '@/components/UI/Button/Button'
 import CloseButton from '@/components/UI/CloseButton/CloseButton'
-import InputText from '@/components/UI/InputText/InputText'
+import InputTest from '@/components/test/InputTest'
 
 export default function Home() {
   return (
@@ -48,10 +48,8 @@ export default function Home() {
       <Button disabled variation='tertiary'>Button</Button>
       <Button disabled variation='black'>Button</Button>
       <CloseButton/>
+      <InputTest/>
       <CloseButton disabled/>
-      <InputText/>
-      <InputText defaultValue={"Hello"}/>
-      <InputText defaultValue={"Hello"} placeholder='world'/>
 
       <div className={styles.grid}>
         <a
