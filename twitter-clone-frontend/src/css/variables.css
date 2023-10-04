@@ -1,0 +1,23 @@
+:root {
+    --color-main: #1D9BF0;
+    --color-main-01: rgb(29, 155, 240, 0.1);
+    --color-main-02: rgba(29, 155, 240, 0.2);
+    --color-main-005: rgba(29, 155, 240, 0.05);
+    --color-main-secondary: #1D9BF0;
+    --color-background: #FFFFFF;
+    --color-text: #000000;
+    --color-text-01: rgba(0, 0, 0, 0.1);
+    --color-text-02: rgba(0, 0, 0, 0.2);
+    --color-text-015: rgba(0, 0, 0, 0.15);
+    --color-text-005: rgba(0, 0, 0, 0.05);
+    --color-border: rgb(207, 217, 222);
+    --color-border-active: rgb(29, 155, 240);
+    --color-text-border: #CFD9DE;
+    --color-main-hover: rgba(26, 140, 216);
+    --color-main-hover-01: rgba(26, 140, 216, 0.1);
+    --color-main-hover-02: rgba(26, 140, 216, 0.2);
+
+    --transition-background-main: background 0.1s ease-in-out;
+
+    --color-placeholder: rgb(83, 100, 113);
+}

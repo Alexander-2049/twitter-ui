@@ -1,0 +1,108 @@
+.input_text_wrapper {
+    width: 440px;
+    height: 56px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-size: 18px;
+    position: relative;
+
+    &.input_text_wrapper-focus {
+        border-color: var(--color-border-active);
+        outline: 2px solid var(--color-border-active);
+    }
+
+    .input_text__placeholder {
+        display: block;
+        width: 100%;
+        padding-top: 17px;
+        padding-left: 8px;
+        padding-right: 8px;
+        pointer-events: none;
+        user-select: none;
+        font-family: inherit;
+        transition: padding 0.08s ease-in-out, font-size 0.08s ease-in-out;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        box-sizing: border-box;
+        color: var(--color-placeholder);
+    }
+
+    &.input_text_wrapper-with-text {
+        .input_text__placeholder {
+            font-size: 15px;
+            color: var(--color-placeholder);
+            padding-top: 3px;
+            padding-left: 9px;
+        }
+    }
+
+    &.input_text_wrapper-focus {
+        .input_text__placeholder {
+            font-size: 15px;
+            color: var(--color-main);
+            padding-top: 3px;
+            padding-left: 9px;
+        }
+    }
+}
+
+.input_text__input {
+    border: none;
+    font-size: inherit;
+    background: none;
+    padding: 0 8px 6px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+         color: transparent;
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+         color: transparent;
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+         color: transparent;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+         color: transparent;
+    }
+    &::placeholder {
+         color: transparent;
+    }
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+         color: transparent;
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+         color: transparent;
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+         color: transparent;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+         color: transparent;
+    }
+    &::placeholder {
+         color: transparent;
+    }
+}

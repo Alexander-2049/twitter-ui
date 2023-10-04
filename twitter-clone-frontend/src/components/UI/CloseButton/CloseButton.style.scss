@@ -1,0 +1,35 @@
+.close_button {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+    border-style: none;
+    border-radius: 50%;
+    transition: var(--transition-background-main);
+
+    &:hover:enabled {
+        cursor: pointer;
+        background-color: var(--color-text-005);
+    }
+
+    &:hover:enabled:active {
+        background-color: var(--color-text-015);
+    }
+
+    &:disabled, &[disabled]{
+        opacity: 0.5;
+      
+        &:hover {
+          cursor: auto;
+        }
+    }
+
+    .close_button__image {
+        width: 18px;
+        height: 18px;
+    }
+}
