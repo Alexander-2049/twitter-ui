@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import Button from '@/components/UI/Button/Button'
 import CloseButton from '@/components/UI/CloseButton/CloseButton'
