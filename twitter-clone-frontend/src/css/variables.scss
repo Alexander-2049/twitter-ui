@@ -1,0 +1,57 @@
+:root {
+    --color-main: #1D9BF0;
+    --color-main-01: rgb(29, 155, 240, 0.1);
+    --color-main-02: rgba(29, 155, 240, 0.2);
+    --color-main-005: rgba(29, 155, 240, 0.05);
+    --color-main-secondary: #1D9BF0;
+    --color-border-active: rgb(29, 155, 240);
+    --color-main-hover: rgba(26, 140, 216);
+    --color-main-hover-01: rgba(26, 140, 216, 0.1);
+    --color-main-hover-02: rgba(26, 140, 216, 0.2);
+    
+    --color-background: #FFFFFF;
+    --color-text: #000000;
+    --color-text-01: rgba(0, 0, 0, 0.1);
+    --color-text-02: rgba(0, 0, 0, 0.2);
+    --color-text-015: rgba(0, 0, 0, 0.15);
+    --color-text-005: rgba(0, 0, 0, 0.05);
+    --color-border: rgb(207, 217, 222);
+    --color-text-border: #CFD9DE;
+    --color-error-text: rgb(216, 31, 31);
+    --color-error-border: rgb(216, 31, 31);
+    --color-placeholder: rgb(83, 100, 113);
+
+    --transition-background-main: background 0.1s ease-in-out;
+
+    --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-main: #1D9BF0;
+    --color-main-01: rgb(29, 155, 240, 0.1);
+    --color-main-02: rgba(29, 155, 240, 0.2);
+    --color-main-005: rgba(29, 155, 240, 0.05);
+    --color-main-secondary: #1D9BF0;
+    --color-border-active: rgb(29, 155, 240);
+    --color-main-hover: rgba(26, 140, 216);
+    --color-main-hover-01: rgba(26, 140, 216, 0.1);
+    --color-main-hover-02: rgba(26, 140, 216, 0.2);
+
+    --color-background: #000000;
+    --color-text: rgb(231, 233, 234);
+    --color-text-01: rgba(231, 233, 234, 0.1);
+    --color-text-02: rgba(231, 233, 234, 0.2);
+    --color-text-015: rgba(231, 233, 234, 0.15);
+    --color-text-005: rgba(255, 255, 255, 0.05);
+    --color-border: rgb(46, 47, 48);
+    --color-text-border: #CFD9DE;
+    --color-error-text: rgb(216, 31, 31);
+    --color-error-border: rgb(216, 31, 31);
+    --color-placeholder: rgb(77, 82, 86);
+
+    --transition-background-main: background 0.1s ease-in-out;
+
+    --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+}

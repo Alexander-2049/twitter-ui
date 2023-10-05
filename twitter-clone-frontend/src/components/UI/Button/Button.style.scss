@@ -63,6 +63,24 @@
             outline: var(--color-main) 3px solid;
         }
     }
+    @media (prefers-color-scheme: dark) {
+        &.black {
+            color: #000000;
+            background-color: #ffffff;
+
+            &:hover:enabled {
+                background-color: #ffffffed;
+            }
+    
+            &:hover:enabled:active {
+                background-color: #d8d8d8ee;
+            }
+    
+            &:focus-visible {
+                outline: var(--color-main) 3px solid;
+            }
+        }
+    }
 
     &:disabled, &[disabled]{
         opacity: 0.5;

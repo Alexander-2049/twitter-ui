@@ -31,5 +31,8 @@
     .close_button__image {
         width: 18px;
         height: 18px;
+        path {
+            fill: var(--color-text);
+        }
     }
 }
