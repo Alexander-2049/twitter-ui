@@ -57,6 +57,38 @@
             font-family: inherit;
             padding: 27px 8px 7px;
             border: none;
+            width: 100%;
+        }
+    }
+
+    .input__error_ul {
+        display: none;
+    }
+    &.input--error {
+        .input__container {
+            border-color: var(--color-error-border);
+            outline-color: var(--color-error-border);
+        }
+        .input__label {
+            color: var(--color-error-text) !important;
+        }
+        .input__error_ul {
+            display: block;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding-inline-start: 0;
+                padding-top: 6px;
+                padding-left: 6px;
+                padding-right: 6px;
+    
+            color: var(--color-error-text);
+    
+            .input__error_li {
+                list-style: none;
+                margin-top: 6px;
+            }
         }
     }
 }

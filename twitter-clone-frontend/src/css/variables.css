@@ -16,6 +16,8 @@
     --color-main-hover: rgba(26, 140, 216);
     --color-main-hover-01: rgba(26, 140, 216, 0.1);
     --color-main-hover-02: rgba(26, 140, 216, 0.2);
+    --color-error-text: rgb(216, 31, 31);
+    --color-error-border: rgb(216, 31, 31);
 
     --transition-background-main: background 0.1s ease-in-out;
 

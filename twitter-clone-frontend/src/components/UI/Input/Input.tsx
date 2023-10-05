@@ -1,18 +1,8 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Input.style.scss';
 import './hide-placeholder.scss';
 import {v4 as uuidv4} from 'uuid';
-
-/*
- * Attributes:
- * - type: text/email/password
- * - required: true/false
- * - minlength: number
- * - maxlength: number
- * - 
- * 
-*/
 
 interface Props {
     type?: 'text' | 'email' | 'password';
@@ -49,10 +39,12 @@ const Input: React.FC<Props> = ({
     minLength,
     maxLength,
 }: Props) => {
-    const [generatedId] = useState(
-        `input-${type}-${uuidv4()}`,
-    );
+    const [generatedId, setGeneratedId] = useState<string | undefined>();
     const [isFocused, setIsFocused] = useState(false);
+
+    useEffect(() => {
+        setGeneratedId(`input-${type}-${uuidv4()}`)
+    }, [type])
 
     const handleFocus = () => {
         setIsFocused(true);
@@ -62,7 +54,10 @@ const Input: React.FC<Props> = ({
     };
 
     return (
-        <div className={`input-wrapper ${className || ''}`} style={styleWrapper}>
+        <div
+            className={`input-wrapper ${errors.length > 0 ? 'input--error' : ''} ${className || ''}`}
+            style={styleWrapper}
+        >
             <div className={`input__container ${isFocused ? 'input__container--focus' : value === '' ? '' : 'input__container--not-empty'}`}>
                 <label
                     className='input__label'
@@ -88,6 +83,16 @@ const Input: React.FC<Props> = ({
                     onBlur={handleBlur}
                 />
             </div>
+            <ul className='input__error_ul'>
+                {errors.map((err) => (
+                    <li
+                        key={`err-list-${id || generatedId}`}
+                        className='input__error_li'
+                    >
+                        {err}
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };
