@@ -1,4 +1,5 @@
-import '@/css/variables.css'
+import '@/css/variables.scss'
+import '@/css/globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -6,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Twitter (Clone)',
-  description: 'Application made by a single developer',
+  description: 'Twitter Clone made by a single developer',
   themeColor: '#1D9BF0'
 }
 
